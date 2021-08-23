@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: movieapp
-        image: gowtham758550/cvmaker
+        image: arul1541/cvmaker
         ports:
         - containerPort: 1200
