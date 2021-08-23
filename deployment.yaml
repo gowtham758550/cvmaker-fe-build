@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cvmaker
+  labels:
+    app: cvmaker
+spec:
+  selector:
+    matchLabels:
+      app: cvmaker
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cvmaker
+    spec:
+      containers:
+      - name: movieapp
+        image: gowtham758550/cvmaker
+        ports:
+        - containerPort: 1200
